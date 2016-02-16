@@ -19,3 +19,18 @@ This is a table of basic git commands:
 | Update from the remote repository | Fetch and merge changes on the remote server to your working directory                | ``` git pull ```                                                                                 |
 |                                   | To merge a different branch into your active branch                                   | ``` git merge <branchname> ```                                                                   |
 | Search                            | Search git repository for "foo()"                                                     | ``` git grep "foo()" ```                                                                         |
+
+
+#### Git flow
+
+For a new branch, this should be the workflow: 
+``` git checkout -b "branchname" ```
+```javascript
+/* make changes to files */
+```
+```
+git status
+git add .  OR git add <filename>
+git commit -m "commit comment"
+git push origin <branchname>
+```
